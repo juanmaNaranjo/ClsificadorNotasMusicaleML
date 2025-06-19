@@ -24,7 +24,7 @@ import time
 # RUTA DE LOS ARCHIVOS DE CROPOBJECTS
 CROPOBJECT_DIR = os.path.join(
     os.path.expanduser('~'),
-    'C:\\UTP\\Machine Learni\\proyecto\\muscima-pp-master\\muscima-pp-master\\v1.0\\data\\cropobjects_manual'
+    'ruta dataset'
 )
 
 # CARGA DE ARCHIVOS
@@ -396,6 +396,6 @@ def predecir_y_comparar(ruta_imagen, model_cnn, model_rf, encoder, size=(64, 64)
     return pred_class_cnn, pred_class_rf
 
 # Ejemplo de uso
-pred_cnn, pred_rf = predecir_y_comparar('C:\\UTP\\Machine Learni\\imagen1.jpg', model_cnn, rf, label_encoder)
+pred_cnn, pred_rf = predecir_y_comparar('ruta imagenprueba', model_cnn, rf, label_encoder)
 print(f"Predicción CNN: {pred_cnn}")
 print(f"Predicción Random Forest: {pred_rf}")
