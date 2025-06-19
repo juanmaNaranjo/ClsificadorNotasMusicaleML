@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Clasificador de Símbolos Musicales</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Clasificación de Símbolos Musicales</h1>
+
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <button type="submit">Subir Imagen y Predecir</button>
+        </form>
+
+        {% if pred_cnn %}
+        <h2>Resultados de la Predicción</h2>
+        <p><strong>Predicción CNN:</strong> {{ pred_cnn }}</p>
+        <p><strong>Predicción Random Forest:</strong> {{ pred_rf }}</p>
+
+        <h3>Imagen subida</h3>
+        <img src="{{ img_path }}" alt="Imagen subida" style="max-width:300px;">
+
+        <h3>Comparación Visual</h3>
+        <img src="/comparacion_prediccion.png" alt="Comparación predicción" style="max-width:500px;">
+        {% endif %}
+    </div>
+</body>
+</html>

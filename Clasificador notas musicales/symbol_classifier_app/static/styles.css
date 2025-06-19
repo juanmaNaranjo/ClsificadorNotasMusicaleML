@@ -1,0 +1,86 @@
+/* Fondo como una partitura moderna */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2c2c2c;
+
+    background-image: url('/static/Presentación Proyecto Musical Simple Blanco y Negro.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* Título principal con un estilo elegante tipo música clásica */
+h1 {
+    font-family: 'Georgia', serif;
+    color: #3e3e3e;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #aaa;
+    padding-bottom: 0.5rem;
+}
+
+/* Botón con diseño inspirado en teclas de piano */
+button {
+    background-color: #222;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #444;
+}
+
+/* Estilo para inputs y formularios */
+input[type="file"] {
+    margin-top: 1rem;
+    display: block;
+}
+
+/* Subtítulos */
+h2, h3 {
+    color: #4b3b2f;
+    margin-top: 2rem;
+}
+
+/* Imagenes con borde tipo nota musical */
+img {
+    margin-top: 1rem;
+    border: 3px solid #d0c4af;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Parrafos de predicción */
+p {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+/* Centrado global del contenido */
+/* Contenedor centrado y con márgenes arriba/abajo */
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    margin: 20px auto;       /* 20px arriba y abajo, auto para centrar horizontalmente */
+    padding: 1.5rem 2rem;     /* Espaciado interno del contenido */
+    max-width: 1000px;        /* Limita el ancho para que no se desborde */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente para contraste */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
